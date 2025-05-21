@@ -1,0 +1,37 @@
+erDiagram 
+  Karyawan {
+      string ID_Karyawan PK
+      string Nama
+      string Posisi
+  }
+
+  Pelanggan {
+    string ID_Pelanggan PK
+    string Nama
+    string Alamat
+  }
+
+  Pesanan {
+    string ID_Pesanan PK
+    string ID_Pelanggan FK
+    string ID_Karyawan FK
+    string Tanggal_Pesanan
+    string Metode_Pembayaran
+  }
+
+  Item {
+    string ID_Item PK
+    string Nama
+    string Harga
+  }
+
+  Pesanan_Item {
+    string ID_Pesanan FK
+    string ID_Item FK
+  }
+
+  Pesanan ||--|{ Pesanan_Item : ""
+  Item ||--o{ Pesanan_Item : ""
+  Karyawan ||--o{ Pesanan : ""
+  Pelanggan ||--o{ Pesanan : ""
+  
