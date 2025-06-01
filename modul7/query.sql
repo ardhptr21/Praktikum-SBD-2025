@@ -1,3 +1,5 @@
+CREATE DATABASE 022_NOPS_AnomaliUniverse;
+
 CREATE TABLE EntitasAnomali (
   id_entitas INT AUTO_INCREMENT PRIMARY KEY,
   nama_entitas VARCHAR(150) NOT NULL UNIQUE,
@@ -120,7 +122,7 @@ INSERT INTO
 VALUES
 	(1, 'User123', '25', 'Ikut bergoyang tanpa sadar, merasa sedikit trippy.'),
 	(2, 'User456', '600', 'Telinga berdenging suara CROCODILO, mulai mempertanyakan realita.'),
-	(5, 'User789', '170', 'Merasa perlu mengirim gift virtual dan mengulang kata-kata aneh.');			
+	(5, 'User789', '170', 'Merasa perlu mengirim gift virtual dan mengulang kata-kata aneh.');
 
 -- 1.
 DELIMITER $$
